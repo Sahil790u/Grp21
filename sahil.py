@@ -127,8 +127,8 @@ def handle_bgmi(message):
 
     target, port, time_duration = command[1], int(command[2]), int(command[3])
 
-    if time_duration > 100:
-        bot.reply_to(message, "Error: Max attack time is 100 seconds ❌.")
+    if time_duration > 200:
+        bot.reply_to(message, "Error: Max attack time is 200 seconds ❌.")
         return
 
     # Check if an attack is already running
